@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9eecc0ba-c0a0-4ef2-9da4-574c9d2541e2" name="theme.bcreate.nl">
+        <fileTransfer rootFolder="/home/bijansu229/public_html/theme" accessType="SFTP" host="bcreate.nl" port="22" sshConfigId="ea488dbc-944b-4415-9443-2325e578021b" sshConfig="bijansu229@bcreate.nl:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

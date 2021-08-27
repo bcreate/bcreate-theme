@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="bcreate.nl" id="ea488dbc-944b-4415-9443-2325e578021b" keyPath="C:\.ssh\id_rsa_ssh" port="22" nameFormat="DESCRIPTIVE" username="bijansu229" />
+    </configs>
+  </component>
+</project>
