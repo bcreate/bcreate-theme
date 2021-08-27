@@ -1,6 +1,6 @@
 # ignore everything in the root except the "wp-content" directory.
 *
-*/
+
 !wp-content/
 !.gitignore
 
@@ -11,11 +11,12 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
-# ignore these plugins
-wp-content/plugins/hello.php
+# unignore these plugins
 
-# ignore specific themes
-wp-content/themes/twenty*/
+# unignore specific themes
+!wp-content/themes/bcreate/
+!wp-content/themes/bcreate/*
+
 
 # ignore node dependency directories
 node_modules/
