@@ -10,25 +10,33 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bcreate' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bcreate' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bcreate' ), 'bcreate', '<a href="https://www.bcreate.nl">bCreate</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer row">
+		<div class="col-4">
+			<?php
+			wp_nav_menu([
+				'theme_location' => 'footer-1',
+				'menu_id' => 'footer-1'
+			]);
+			?>
+		</div>
+		<div class="col-4">
+			<?php
+			wp_nav_menu([
+				'theme_location' => 'footer-2',
+				'menu_id' => 'footer-2'
+			]);
+			?>
+		</div>
+		<div class="col-4">
+			<?php
+			wp_nav_menu([
+				'theme_location' => 'footer-3',
+				'menu_id' => 'footer-3'
+			]);
+			?>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

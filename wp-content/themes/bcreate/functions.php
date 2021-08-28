@@ -7,6 +7,10 @@
  * @package bCreate
  */
 
+/**
+ * ----------------------------------------DO NOT EDIT USE template-functions.php------------------------------------------------------
+ */
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -51,6 +55,9 @@ if ( ! function_exists( 'bcreate_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'bcreate' ),
+				'footer-1' => esc_html__( 'Footer 1', 'bcreate' ),
+				'footer-2' => esc_html__( 'Footer 2', 'bcreate' ),
+				'footer-3' => esc_html__( 'Footer 3', 'bcreate' ),
 			)
 		);
 
@@ -136,20 +143,6 @@ function bcreate_widgets_init() {
 }
 add_action( 'widgets_init', 'bcreate_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
-function bcreate_scripts() {
-	wp_enqueue_style( 'bcreate-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'bcreate-style', 'rtl', 'replace' );
-
-	wp_enqueue_script( 'bcreate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'bcreate_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -184,3 +177,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+/**
+ * ----------------------------------------DO NOT EDIT USE template-functions.php------------------------------------------------------
+ */
