@@ -8,7 +8,7 @@
  */
 
 /**
- * ----------------------------------------DO NOT EDIT USE template-functions.php------------------------------------------------------
+ * ----------------------------------------DO NOT EDIT USE functions-theme.php------------------------------------------------------
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -157,7 +157,7 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+require get_template_directory() . '/inc/functions-theme.php';
 
 /**
  * Customizer additions.
@@ -180,5 +180,5 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 
 /**
- * ----------------------------------------DO NOT EDIT USE template-functions.php------------------------------------------------------
+ * ----------------------------------------DO NOT EDIT USE functions-theme.php------------------------------------------------------
  */

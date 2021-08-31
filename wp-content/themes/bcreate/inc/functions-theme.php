@@ -9,6 +9,7 @@
  * Required files
  */
 require get_template_directory() . '/inc/functions-admin.php';
+require get_template_directory() . '/inc/functions-bbuilder.php';
 
 /**
  * Adds custom classes to the array of body classes.
@@ -69,3 +70,19 @@ function bcreate_add_favicon()
 }
 
 add_action('wp_head', 'bcreate_add_favicon');
+
+
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+
+function my_acf_json_save_point($path) {
+
+    // update path
+    $path = get_stylesheet_directory() . '/acf-json';
+
+
+    // return
+    return $path;
+
+}
+
+
