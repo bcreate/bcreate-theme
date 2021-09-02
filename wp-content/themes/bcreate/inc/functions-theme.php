@@ -85,4 +85,9 @@ function my_acf_json_save_point($path) {
 
 }
 
+function bcreate_enqueue_style() {
+    wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/theme.css' );
+}
+add_action( 'wp_enqueue_scripts', 'bcreate_enqueue_style' );
+
 
