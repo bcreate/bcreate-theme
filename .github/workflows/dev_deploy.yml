@@ -28,4 +28,4 @@ jobs:
           key: ${{ secrets.SSH_PRIV_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd public_html/theme & git fetch & git pull
+            pwd
