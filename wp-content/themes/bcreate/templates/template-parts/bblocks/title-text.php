@@ -8,7 +8,6 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-
 // Create class attribute allowing for custom "className" and "align" values.
 $className = 'bblock-title-text';
 
