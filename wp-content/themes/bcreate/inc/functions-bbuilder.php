@@ -42,6 +42,19 @@ function my_acf_init_block_types() {
 			'keywords' => array('bblock'),
 		));
 	}
+
+	if (function_exists('acf_register_block_type')) {
+		// register a testimonial block.
+		acf_register_block_type(array(
+			'name' => 'bblocks-hero',
+			'title' => __('Hero'),
+			'description' => __('A custom testimonial block.'),
+			'render_callback' => 'render_bblocks',
+			'category' => 'bblocks',
+			'icon' => 'admin-comments',
+			'keywords' => array('bblock'),
+		));
+	}
 }
 
 function render_bblocks($block) {
