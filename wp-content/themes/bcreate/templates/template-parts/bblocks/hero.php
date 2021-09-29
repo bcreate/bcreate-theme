@@ -19,31 +19,15 @@ $ctas  = $hero['ctas'];
 ?>
 
 <div class="<?php echo esc_attr( $className ); ?>" style="background-image: url('<?= $image ?>')">
-<div class="ctas">
-	<?php foreach ( $ctas as $cta ): ?>
-			<a href="<?= $cta["cta"] ?>"><?= $cta["cta_text"] ?></a>
-	<?php endforeach; ?>
+	<div class="text">
+	<span>
+		Copy
+Lorem ipsum dolor dsfsdfdfdfLorem ipsum dolor dsfsdfdfdfLorem ipsum dolor dsfsdfdfdf
+	</span>
+	</div>
+	<div class="ctas">
+	  <?php foreach ( $ctas as $cta ): ?>
+				<a href="<?= $cta["cta"] ?>"><?= $cta["cta_text"] ?></a>
+	  <?php endforeach; ?>
+	</div>
 </div>
-</div>
-<style>
-	.<?= esc_attr( $className ); ?> {
-		position: relative;
-	<?= get_style_from_bblock($style, "block", "height", "px") ?? "" ?>
-	}
-
-
-	.<?= esc_attr( $className ); ?> .ctas {
-		margin: 0 auto;
-		width: fit-content;
-		position: absolute;
-		bottom: 20px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.<?= esc_attr( $className ); ?> .ctas a {
-		border: 1px solid black;
-		padding: 8px;
-		background: white;
-	}
-</style>
